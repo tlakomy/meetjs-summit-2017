@@ -69,17 +69,14 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck contentWidth={1200} transition={["fade"]} theme={theme} transitionDuration={500}>
-        <Slide bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="black">
+        <Slide bgColor="black">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Load it faster
           </Heading>
           <Heading size={1} fit caps>
              improving React apps loading time and performance
           </Heading>
-          <Text textSize="1em" caps margin="20px 0px 0px" bold>Tomasz Łakomy, Software Engineer @ Egnyte</Text>
-        </Slide>
-        <Slide bgColor="black">
-          <Image fit src={images.egnyteLogo.replace("/", "")} height="300px"/>
+          <Image fit src={images.egnyteLogo.replace("/", "")} height="200px"/>
         </Slide>
         <Slide bgColor="black">
           <Heading size={2} caps fit textColor="primary" textFont="primary">
@@ -131,11 +128,6 @@ export default class Presentation extends React.Component {
         <Slide>
           <Heading size={2} caps fit>
             Let's talk about mobile
-          </Heading>
-        </Slide>
-        <Slide bgColor="black">
-          <Heading size={2} caps fit textColor="primary" textFont="primary">
-            Mobile <S type="strikethrough">first</S> only
           </Heading>
         </Slide>
         <Slide>
@@ -213,24 +205,20 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide>
-          <Image fit src={images.averageWebsite.replace("/", "")} height="600px"/>
-          <Cite>Source: https://twitter.com/HenriHelvetica/status/888129619550810112</Cite>
-        </Slide>
-        <Slide>
           <Heading size={2} caps fit>
             Sheep less assets (fonts, images, code)
           </Heading>
         </Slide>
-        <Slide>
-          <Heading size={2} caps fit>
-            Meet Shrek
-          </Heading>
-        </Slide>
         <Slide bgImage={images.shrek.replace("/", "")} bgDarken={0}>
-          <Appear>
-            <Heading size={2} caps fit textColor="black" bgColor="white">
+          <Appear fid="1">
+            <Text textSize={100} caps bold textColor="black" bgColor="white">
+              Meet Shrek
+            </Text>
+          </Appear>
+          <Appear fid="2">
+            <Text textSize={60} caps bold textColor="black" bgColor="white">
               (a.k.a. average JS bundle in 2017)
-            </Heading>
+            </Text>
           </Appear>
         </Slide>
         <Slide bgImage={images.shrekAfter.replace("/", "")} bgDarken={0}></Slide>
@@ -242,12 +230,6 @@ export default class Presentation extends React.Component {
         <Slide bgColor="black">
           <Image fit src={images.coverage.replace("/", "")} height="500px"/>
         </Slide>
-        <Slide>
-          <Heading size={2} caps fit>
-            Lighthouse audits (Chrome 60+)
-          </Heading>
-        </Slide>
-        <Slide bgImage={images.lighthouse.replace("/", "")}></Slide>
         <Slide bgColor="black">
           <Heading size={2} caps fit textColor="primary" textFont="primary">
             Minimize with Babili
@@ -284,18 +266,6 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide>
           <Heading size={2} caps fit>
-            Ship less libraries
-          </Heading>
-        </Slide>
-        <Slide bgColor="primary">
-          <CodePane
-            lang="javascript"
-            textSize={20}
-            source={require("raw-loader!../assets/lodash.example")}
-          />
-        </Slide>
-        <Slide>
-          <Heading size={2} caps fit>
             Webpack tree shaking
           </Heading>
         </Slide>
@@ -311,9 +281,6 @@ export default class Presentation extends React.Component {
           <Heading size={2} caps fit>
             Ship React for production
           </Heading>
-        </Slide>
-        <Slide bgColor="black">
-          <Image src={images.osmaniTweet.replace("/", "")} height="100%"/>
         </Slide>
         <Slide bgImage={images.devReactProd.replace("/", "")}></Slide>
         <Slide bgColor="black">
@@ -435,6 +402,11 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide>
+          <Heading size={2} fit>
+            USE pureComponents
+          </Heading>
+        </Slide>
+        <Slide>
           <Heading size={2} caps fit>
             Inline React Elements in production
           </Heading>
@@ -490,6 +462,21 @@ export default class Presentation extends React.Component {
         <Slide bgColor="black">
           <Heading size={2} caps fit textColor="primary" textFont="primary">
             Demo
+          </Heading>
+        </Slide>
+        <Slide bgColor="black">
+          <Heading size={2} caps fit textColor="primary" textFont="primary">
+            Bottom line
+          </Heading>
+        </Slide>
+        <Slide>
+          <Heading size={2} caps fit textFont="primary">
+            Ship 🐑 less
+          </Heading>
+        </Slide>
+        <Slide bgColor="black">
+          <Heading size={2} caps fit textColor="primary" textFont="primary">
+            Deliver more
           </Heading>
         </Slide>
         <Slide bgColor="black">
