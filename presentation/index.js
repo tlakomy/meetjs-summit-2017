@@ -80,7 +80,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="black">
           <Heading size={2} caps fit textColor="primary" textFont="primary">
-            Motivation
+              Motivation
           </Heading>
         </Slide>
         <Slide bgColor="black">
@@ -145,14 +145,6 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide>
           <Heading size={2} caps fit>
-            How do we simulate mobile CPU on desktop?
-          </Heading>
-        </Slide>
-        <Slide bgColor="black">
-          <Image fit src={images.throttlingOn.replace("/", "")} height="500px"/>
-        </Slide>
-        <Slide>
-          <Heading size={2} caps fit>
             Everyone uses Chrome on Android, right?
           </Heading>
         </Slide>
@@ -194,11 +186,6 @@ export default class Presentation extends React.Component {
             So let's optimize for everyone!
           </Heading>
         </Slide>
-        <Slide>
-          <Heading size={2} caps fit>
-            The best code is no code
-          </Heading>
-        </Slide>
         <Slide bgImage={images.bookshelf.replace("/", "")} bgDarken={0.5}>
           <Heading size={2} caps fit textColor="white">
             Users, not code
@@ -207,6 +194,11 @@ export default class Presentation extends React.Component {
         <Slide>
           <Heading size={2} caps fit>
             Sheep less assets (fonts, images, code)
+          </Heading>
+        </Slide>
+        <Slide>
+          <Heading size={2} caps fit>
+            🐑 less assets (fonts, images, code)
           </Heading>
         </Slide>
         <Slide bgImage={images.shrek.replace("/", "")} bgDarken={0}>
@@ -365,28 +357,6 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide>
           <Heading size={2} caps fit>
-            React perf tools & let’s get wasted
-          </Heading>
-          <Heading size={1} fit>
-            npm i --save-dev react-addons-perf
-          </Heading>
-        </Slide>
-        <Slide>
-          <Image src={images.reactPerfTools.replace("/", "")} height="475px"/>
-        </Slide>
-        <Slide>
-          <Heading size={2} caps fit>
-            Why did you update?
-          </Heading>
-          <Heading size={1} fit>
-            npm i --save-dev why-did-you-update
-          </Heading>
-        </Slide>
-        <Slide margin={0}>
-          <Image src={images.whyUpdate.replace("/", "")} height="600px"/>
-        </Slide>
-        <Slide>
-          <Heading size={2} caps fit>
             Render as little as possible
           </Heading>
         </Slide>
@@ -397,13 +367,8 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide>
-          <Heading size={2} caps fit>
-            Use Immutable data
-          </Heading>
-        </Slide>
-        <Slide>
           <Heading size={2} fit>
-            USE pureComponents
+            USE pureComponents WITH IMMUTABLE DATA
           </Heading>
         </Slide>
         <Slide>
@@ -422,24 +387,10 @@ export default class Presentation extends React.Component {
         <Slide bgImage={images.profiling.replace("/", "")} bgDarken={0}></Slide>
         <Slide bgImage={images.splitting.replace("/", "")} bgDarken={0.5}>
           <Heading size={2} caps fit textColor="white">
-            Code Spliting
+            React Code Spliting
           </Heading>
-        </Slide>
-        <Slide>
-          <Heading size={2} caps fit textFont="primary">
-            How do we 🐑 code to production?
-          </Heading>
-          <List>
-            <Appear><ListItem>Yolo development build to prod</ListItem></Appear>
-            <Appear><ListItem>Single minified app.js</ListItem></Appear>
-            <Appear><ListItem>Separate app.js and vendor.js</ListItem></Appear>
-            <Appear><ListItem>Different bundles for different routes</ListItem></Appear>
-            <Appear><Cite>Source: real life</Cite></Appear>
-          </List>
-        </Slide>
-        <Slide bgImage={images.inception.replace("/", "")} bgDarken={0}>
-          <Heading size={2} fit textColor="white">
-            We need to go deeper
+          <Heading size={2} caps fit textColor="white">
+            a.k.a. stop making users wait for unnecessary crap at initial page load
           </Heading>
         </Slide>
         <Slide bgColor="black" textColor="primary">
